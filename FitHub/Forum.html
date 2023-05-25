@@ -1,0 +1,160 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Forum</title>
+		<link rel="stylesheet" href="Forum_Style.css">
+	</head>
+	
+	<body>
+
+		
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="subnav">
+              <button class="subnavbtn">Training <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="How_To.html">Workout Videos</a>
+                <a href="programs.html">Sample Programs</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="classes.html">Classes</a>
+                <a href="FitCalc.html">Calculators</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Nutrition <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="meals.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+              </div>
+            </div>
+            <a href="Forum.html">Forum</a>
+            <a href="Contact.html">Contact</a>
+         </div>
+
+
+
+		<header>
+				<h1>Forum</h1>
+				<h3>Because we do better together...</h3>
+				<img src="FitFam.png">
+				<p>Pick your topic, put your display name, and input any text you'd like!</p>
+		</header>
+		
+		<div class="selector">
+			<label>Topic: </label>
+		
+			<select name="Topic">
+				<option value="null">Pick a Topic</option>
+				<option value="equitment">Equitment Q/A</option>
+				<option value="Q/A">How to...</option>
+				<option value="progress">Progress and Goals</option>
+				<option value="diet">Home Recipies and Diets</option>
+				<option value="general">General/Other</option>
+			</select>
+		</div>
+		
+		<div class="forum-posts">
+		
+			<div class="forum_input">
+			
+				<div class="form">
+					<label>Display Name: </label>
+					<input type="text" name="name">
+				</div>
+
+				<div class="form">
+					<label>Message: </label>
+					<textarea name="message" rows="10"></textarea>
+				</div>
+				
+				<div class="buttonDIV">
+					<input class="button" type="submit" value="Post" name="SubmitButton">
+				</div>
+				
+			</div>
+			
+			<div class="forum_categories">
+		
+				<div id="equitment">
+				
+					<div class="subforum_title">
+						<h2>Equitment Q/A</h2>
+					</div>
+					
+					<div class="subforum_label">
+						<h4 id="subforum_name">Name</h4>
+						<h4 id="subforum_date">Date</h4>
+						<h4 id="subforum_post">Post</h4>
+					</div>
+					
+				</div>
+				
+				<div id="Q/A">
+				
+					<div class="subforum_title">
+						<h2>How to...</h2>
+					</div>
+					
+					<div class="subforum_label">
+						<h4 id="subforum_name">Name</h4>
+						<h4 id="subforum_date">Date</h4>
+						<h4 id="subforum_post">Post</h4>
+					</div>
+					
+				</div>
+				
+				<div id="progress">
+					
+					<div class="subforum_title">
+						<h2>Progress and Goals</h2>
+					</div>
+					
+					<div class="subforum_label">
+						<h4 id="subforum_name">Name</h4>
+						<h4 id="subforum_date">Date</h4>
+						<h4 id="subforum_post">Post</h4>
+					</div>
+				
+				</div>
+				
+				<div id="diet">
+				
+					<div class="subforum_title">
+						<h2>Home Recipies and Diets</h2>
+					</div>
+					
+					<div class="subforum_label">
+						<h4 id="subforum_name">Name</h4>
+						<h4 id="subforum_date">Date</h4>
+						<h4 id="subforum_post">Post</h4>
+					</div>
+					
+				</div>
+				
+				<div id="general">
+				
+					<div class="subforum_title">
+						<h2>General/Other</h2>
+					</div>
+					
+					<div class="subforum_label">
+						<h4 id="subforum_name">Name</h4>
+						<h4 id="subforum_date">Date</h4>
+						<h4 id="subforum_post">Post</h4>
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<script src="Forum_JS.js"></scriptsrc></script>
+	</body>
+</html>

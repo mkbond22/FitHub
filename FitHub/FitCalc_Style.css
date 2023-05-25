@@ -1,0 +1,135 @@
+.navbar {
+    overflow: hidden;
+    background-color: #004AAD;
+    font-family: fantasy;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    font-family: fantasy;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-family: fantasy;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #FF6700;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    font-family: fantasy;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #FF6700;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    font-family: fantasy;
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    font-family: fantasy;
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+
+
+body{
+	width: 70%;
+	margin: auto;
+	position: relative;
+	background-color:#737373;
+	color: white;
+}
+
+header h1{
+	background-color:#FF6700;
+}
+
+header h3{
+	background-color: #004AAD;
+}
+
+header{
+	text-align: center;
+	color: white;
+	background-color:#737373;
+}
+
+.selector{
+	text-align: center
+}
+
+.selector select{
+	width: 40%;
+}
+
+.calc_title h2{
+    text-align: center;
+    background-color: #004AAD;
+}
+
+#input div label{
+    text-align: center;
+    display: block;
+}
+
+#input{
+    text-align: center;
+    display: block;
+}
+
+#input img{
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.button{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 15px;
+	background-color: #FF6700;
+	color: white;
+}
+.buttonDIV{
+    text-align: center;
+}
