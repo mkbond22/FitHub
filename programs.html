@@ -1,10 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sample Programs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="trackerstyle.css" />
+    <style>
+      .carousel-container {
+        margin-top: 80px;
+        padding-top: 20px; /* Add padding to create space between navbar and carousel */
+      }
+
+      .navbar {
+        position: fixed; /* Fix the navbar position */
+        top: 0;
+        width: 100%;
+        z-index: 999; /* Set a high z-index value to ensure the navbar is on top */
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="navbar">
+      <!-- The navigation menu -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Training <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="videos.html">Workout Videos</a>
+          <a href="programs.html">Sample Programs</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Services <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="training.html">Personal Training</a>
+          <a href="classes.html">Classes</a>
+          <a href="app.html">FitHub Tracker</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Nutrition <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="meals.html">Meal Plans</a>
+          <a href="recipes.html">Recipes</a>
+        </div>
+      </div>
+      <a href="forum.html">Forum</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="carousel-container">
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/results.jpg" alt="woman" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/80day results.jpg"
+              alt="80day"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="images/insanity.jpg" alt="man" class="d-block w-100" />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <video width="400" controls>
+      <source
+        src="https://www.beachbodyondemand.com/programs/sure-thing/start-here?videoGuid=SURT0005"
+        type="video/mp4"
+      />
+      Your browser does not support HTML video.
+    </video>
+
+    <h4>
+      Sample Workout
+      <a
+        href="https://www.beachbodyondemand.com/programs/sure-thing/start-here?videoGuid=SURT0005"
+        target="_blank"
+        >Sure Thing</a
+      >.
+    </h4>
+  </body>
 </html>
+
